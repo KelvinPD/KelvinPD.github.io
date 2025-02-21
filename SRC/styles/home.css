@@ -64,11 +64,12 @@
 }
 
 .shape {
-    background-color: #85cbe7;
+    background-color: #85cbe700;
     width: 50%;
     height: 100%;
     position: absolute;
     border-radius: 40% 30% 0% 20%;
+    box-shadow: 0px 0px 12px 4px rgb(4, 255, 234);
     top: 0;
     right: 0;
     z-index: 1;
