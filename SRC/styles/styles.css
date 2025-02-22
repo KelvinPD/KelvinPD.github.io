@@ -9,7 +9,7 @@
 
 
 body {
-    background-color: #c4dcff;
+    background-color: #ebf8fc;
 }
 
 section {
@@ -58,9 +58,59 @@ section {
     box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
 }
 
-.linha-bunita {
-    border: 0;
-    height: 2px; /* Ajuste a espessura da linha aqui */
-    background-color: black; /* Ajuste a cor da linha aqui */
-    margin: 20px 0; /* Espaçamento acima e abaixo da linha */
+.section-title {
+    color: #92b8f0;
+    font-size: 1.563rem;
+}
+
+.section-subtitle {
+    font-size: 2.187rem;
+}
+
+.projeto-img {
+    border-radius: 5px;
+}
+
+.construction-banner {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.construction-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200%;
+    width: 300%;
+    background: repeating-linear-gradient(
+        45deg,
+        #ffcc00,
+        #ffcc00 10px,
+        #000 10px,
+        #000 20px
+    );
+    animation: slide .05s linear infinite;
+    z-index: -1;
+}
+
+.warning-icon {
+    margin: 0 10px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
 }
