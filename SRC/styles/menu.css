@@ -5,3 +5,9 @@
     justify-content: center;
     min-height: 100vh;
 }
+
+#projetos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
