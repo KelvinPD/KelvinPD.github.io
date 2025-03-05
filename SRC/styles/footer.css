@@ -10,7 +10,7 @@ footer {
 }
 
 #copyright {
-    color: #fff;
+    color: var(--color-neutral-4);
     font-weight: 500;
 }
 
