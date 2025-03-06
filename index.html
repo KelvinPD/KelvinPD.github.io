@@ -5,12 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="SRC/styles/styles.css">
+    <link rel="stylesheet" href="SRC/styles/cursor.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Curriculo</title>
 </head>
 <body>
+    <div class="cursor"></div>
+
+    <script type="text/javascript">
+        const cursor = document.querySelector(".cursor");
+        var timeout;
+
+        document.addEventListener("mousemove", (e) => {
+            let x = e.clientX;
+            let y = e.clientY;
+
+            cursor.style.top = y + "px";
+            cursor.style.left = x + "px";
+            cursor.style.display = "block";
+
+
+            function mouseStopped (){
+                cursor.style.display = "none";
+            }
+            clearTimeout(timeout);
+            timeout = setTimeout(mouseStopped, 1000);
+        });
+
+
+        document.addEventListener("mouseout", () =>{
+            cursor.style.display = "none";
+        })
+    </script>
+
     <header>
         <nav id="navbar">
             <i class="fa-regular fa-file" id="nav_logo"> CV</i>
@@ -304,6 +333,6 @@
     </footer>
     <script src="SRC/javascript/script.js"></script>
 
-    <div class="cursor"></div>
+    
 </body>
 </html>
