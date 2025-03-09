@@ -28,7 +28,7 @@ html {
 
 body {
     background-color: var(--color-primary-1);
-    cursor: none;
+    /**/cursor: none;
 }
 
 section {
@@ -101,6 +101,13 @@ section {
     position: relative;
     overflow: hidden;
     z-index: 1;
+}
+
+.contato-img {
+    margin: 0;
+    margin-left: 80%;
+    width: 20%;
+    height: 20%;
 }
 
 .construction-banner::before {
