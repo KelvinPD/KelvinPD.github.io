@@ -4,6 +4,9 @@
 @import url(menu.css);
 @import url(testimonials.css);
 @import url(footer.css);
+@import url(cursor.css);
+@import url(animations.css);
+@import url(map.css);
 
 :root {
     --color-primary-1: #1d1d1d;
