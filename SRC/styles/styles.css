@@ -57,6 +57,14 @@ section {
     background-color: var(--color-primary-3);
 }
 
+a {
+    cursor: none;
+}
+a:visited {
+    color: inherit;
+    text-decoration: none;
+  }
+
 .social-midia-buttons {
     display: flex;
     gap: 18px;
