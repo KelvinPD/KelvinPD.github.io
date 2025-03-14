@@ -33,6 +33,7 @@
 #cta_buttons a {
     text-decoration: none;
     color: var(--color-primary-1);
+    cursor: none;
 }
 
 #phone_button {
